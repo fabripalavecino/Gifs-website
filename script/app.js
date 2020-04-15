@@ -6,6 +6,8 @@ const url = "https://api.giphy.com/v1/gifs/search?q="
 let contenedor = document.getElementById('resultado-gifs-box');
 const urlTrend = "https://api.giphy.com/v1/gifs/trending";
 let contenedorSugeridos = document.getElementById('contenedor-sugeridos');
+const hrefThemeNight = "http://127.0.0.1:5500/styles/theme2.css";
+const hrefThemeDay = "http://127.0.0.1:5500/styles/theme1.css";
 
 document.addEventListener('DOMContentLoaded', theme);
 
@@ -27,8 +29,7 @@ document.getElementById('drop-list').onclick = function() {
     desaparece();
 }
 
-const hrefThemeNight = "https://127.0.0.1:5500/styles/theme2.css";
-const hrefThemeDay = "https://127.0.0.1:5500/styles/theme1.css";
+
 
 
 function localStorageTema(){
