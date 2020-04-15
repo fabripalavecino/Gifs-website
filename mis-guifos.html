@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Guifos</title>
+    <link rel="stylesheet" href="./styles/theme1.css">
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/estilos.css">
+
+</head>
+
+<body>
+    <header class="chakra gradient font-1">¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de
+        visitas: 12.765.803</header>
+    <div class="page">
+        <figure class="barra">
+            <a href="index.html">
+                <img src="./assets/arrow.svg" alt="arrow" class="arrow-back" id="arrow-hide">
+                <img src="./assets/gifOF_logo.png" alt="logo gifOs" id="logo-gifos">
+            </a>
+        </figure>
+        <figure class="crear-gifos" id="crear-gif-seccion">
+            <section class="crear-gifos-inicia" id="inicia-creacion">
+                <h2 class="gradient">
+                    <span class="chakra font-3 bold">
+                        Crear Guifos
+                    </span>
+                </h2>
+                <figure class="crear-gif-descripcion">
+                    <figcaption class="titulo-descripcion">
+                        <img src="./assets/window-img.png" alt="window">
+                        <strong class="chakra font-2">
+                            Aquí podrás crear tus propios guifos
+                        </strong>
+                    </figcaption>
+                    <div class="descripcion-contenido chakra font-3">
+                        <p>
+                            Crear tu
+                            <strong class="italic">Guifo</strong>
+                            es muy fácil,
+                            graba cualquier imagen con tu cámara y obtén tu guifos
+                            personalizados. Los pasos para crear tu guifo son:
+                        </p>
+                        <ol>
+                            <li><strong>1)</strong>
+                                Dar permisos de acceso a la cámara (sólo por el tiempo de uso)
+                            </li>
+                            <li>
+                                <strong>2)</strong>
+                                Capturar tu momento guifo
+                            </li>
+                            <li>
+                                <strong>3)</strong>
+                                Revisar el momento
+                            </li>
+                            <li>
+                                <strong>4)</strong>
+                                Listo para subir y compartir!
+                            </li>
+                        </ol>
+                        <p>
+                            ¿Quieres comenzar a crear tu
+                            <strong class="italic">guifo</strong>
+                            ahora?
+                        </p>
+                        <figure class="crear-gif-btn-cont">
+                            <button class="chakra font-2 button-1 white-button" id="cancelar">Cancelar
+                            </button>
+                            <button class="chakra font-2 button-1 pink-button" type="button" id="comenzar">
+                                Comenzar
+                            </button>
+
+                        </figure>
+
+                    </div>
+                </figure>
+            </section>
+            <figure class="crear-guifos-grabar hide" id="lugar-grabado">
+                <figcaption class="gradient">
+                    <span class="chakra font-3 bold" id="titulo-grabado">Un Chequeo Antes de Empezar</span>
+                    <img src="./assets/close.svg" alt="cerrar">
+                </figcaption>
+                <video src="#" id="video"></video>
+                <figure class="seccion-carga hide" id="carga-seccion">
+                    <img src="./assets/globe_img.png" alt="globo-de-carga">
+                    <strong class="chakra font-2">Estamos subiendo tu guifo...</strong>
+                    <div class="loading-bar">
+                        <span class="loading-square fill"></span>
+                        <span class="loading-square fill"></span>
+                        <span class="loading-square fill"></span>
+                        <span class="loading-square fill"></span>
+                        <span class="loading-square fill"></span>
+                        <span class="loading-square fill"></span>
+                        <span class="loading-square fill"></span>
+                        <span class="loading-square fill"></span>
+                        <span class="loading-square fill"></span>
+                        <span class="loading-square fill"></span>
+                        <span class="loading-square"></span>
+                        <span class="loading-square"></span>
+                        <span class="loading-square"></span>
+                        <span class="loading-square"></span>
+                        <span class="loading-square"></span>
+                        <span class="loading-square"></span>
+                        <span class="loading-square"></span>
+                        <span class="loading-square"></span>
+                        <span class="loading-square"></span>
+                        <span class="loading-square"></span>
+                        <span class="loading-square"></span>
+                        <span class="loading-square"></span>
+                    </div>
+                    <p class="chakra font-1">
+                        "
+                        Tiempo restante: "
+                        <span class="line-through">15 años</span>
+                        "algunos
+                        minutos"
+                    </p>
+                </figure>
+                <figure class="doble-btn" id="btn-captura">
+                    <button class="button-3 pink-button">
+                        <span class="dotted-pink borde-dotted-3">
+                            <img src="./assets/camera.svg" alt="logo-cámara" id="camara-img">
+                        </span>
+                    </button>
+                    <button class="pink-button button-1">
+                        <span class="borde-dotted-1 dotted-pink font-2">Capturar</span>
+                    </button>
+                </figure>
+                <figure class="seccion-grabado hide" id="control">
+                    <figure class="contador chakra font-2">
+                        00:00:00
+                    </figure>
+                    <figure class="capture-confirm hide" id="capture-confirm">
+                        <figure class="player-bar">
+                            <button class="pink-button button-3 button-play" id="btn-play">
+                                <span class="borde-dotted-3 dotted-pink">
+                                    <span class="arrow-left"></span>
+                                </span>
+                            </button>
+                            <div class="time-bar">
+                                <span class="time-square fill"></span>
+                                <span class="time-square fill"></span>
+                                <span class="time-square fill"></span>
+                                <span class="time-square fill"></span>
+                                <span class="time-square fill"></span>
+                                <span class="time-square fill"></span>
+                                <span class="time-square"></span>
+                                <span class="time-square"></span>
+                                <span class="time-square"></span>
+                                <span class="time-square"></span>
+                                <span class="time-square"></span>
+                                <span class="time-square"></span>
+                                <span class="time-square"></span>
+                                <span class="time-square"></span>
+                                <span class="time-square"></span>
+                                <span class="time-square"></span>
+                                <span class="time-square"></span>
+                            </div>
+                        </figure>
+                        <figure class="upload-gif-btn-container hide" id="upload-btn-container">
+                            <button class="chakra font-2 button-1 white-button" id="btn-recapture">
+                                Repetir Captura
+                            </button>
+                            <button class="chakra font-2 button-1 pink-button" id="btn-upload">
+                                Subir Guifo
+                            </button>
+
+                        </figure>
+                    </figure>
+
+                    <figure class="doble-btn hide" id="btn-ready">
+                        <button class="button-3 btn-red">
+                            <span class="borde-dotted-3">
+                                <img src="./assets/recording.svg" alt="logo-recording">
+                            </span>
+                        </button>
+                        <button class="btn-red button-1">
+                            <span class="borde-dotted-1 font-2">
+                                Listo
+                            </span>
+
+                        </button>
+                    </figure>
+
+                </figure>
+                <figure class="hide" id="cancelar-carga">
+                    <button class="chakra font-2 button-1 white-button carga-cancelar" id="btn-abort">
+                        Cancelar
+                    </button>
+                </figure>
+            </figure>
+        </figure>
+        <section class="resultado-gifs" id="gif-seccion-principal">
+            <h2 class="chakra font-3 subtitulado" id="contenedor-titulo-gif">
+                My Guifos
+            </h2>
+            <div id="gifs-creados"></div>
+        </section>
+        <aside>
+            <figure class="upload-success hide" id="success-field">
+                <figcaption class="gradient">
+                    <span class="chakra font-3 bold" id="sucess-title">
+                        Guifo Subido con Éxito
+                    </span>
+                    <img src="./assets/close.svg" alt="cerrar">
+                </figcaption>
+                <img src="#" alt="uploaded-guifo" class="uploaded-guifo" id="final-guifo">
+                <figure class="upload-confirm hide" id="confirm-window">
+                    <strong>Guifo creado con éxito</strong>
+                    <button class="white-button button-7" id="copiar-btn">
+                        Copiar Enlace Guifo
+                    </button>
+                    <a href="#" target="_blank" class="white-button button-7" id="download-btn">
+                        <span>Descargar Guifo</span>
+                    </a>
+                    <button class="pink-button button-1" id="finish-btn">
+                        Listo
+                    </button>
+                </figure>
+                <figure class="copy-popup hide" id="copy-msg">
+                    <h4>Enlace Copiado</h4>
+                </figure>
+    
+            </figure>
+        </aside>
+    </div>
+    <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+    <script src="./script/mis-guifos.js"></script>
+</body>
+
+</html>

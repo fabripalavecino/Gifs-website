@@ -1,0 +1,172 @@
+$chakra: "Chakra Petch", sans-serif;
+$white: #ffffff;
+$dark-blue: #110038;
+$light-blue: #2e32fb;
+$pink-light: #ee3efe;
+$pink-dark: #ce36db;
+$grey-lighter: #b4b4b4;
+
+@mixin grey-boxes-shadow {
+  box-shadow: inset -2px -2px 0 0 #8f8f8f, inset 2px 2px 0 0 $white;
+}
+
+@mixin dark-border-shadow {
+  ackground: $grey-lighter;
+  box-shadow: inset -2px -2px 0 0 #5c5c5c, inset 2px 2px 0 0 $white;
+}
+
+@mixin btn-border-shadow {
+  border: 1px solid #808080;
+  box-shadow: inset -1px -1px 0 0 $grey-lighter, inset 1px 1px 0 0 $white;
+}
+
+@mixin btn-blue {
+  background: $light-blue;
+  border: 1px solid #4c2f99;
+  box-shadow: inset -2px -2px 0 0 #2124b3, inset 2px 2px 0 0 $white;
+}
+
+body {
+  background-color: $dark-blue;
+}
+
+.gradient {
+  background-image: linear-gradient(270deg, $pink-light 0%, $light-blue 100%);
+}
+
+.pink-button {
+  background: $pink-light;
+  box-shadow: inset -1px -1px 0 0 #a72cb3, inset 1px 1px 0 0 $white;
+  border: 1px solid $dark-blue;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  color: $white;
+  & :hover {
+    background: $pink-dark;
+  }
+}
+
+.my-guifos {
+  color: $white;
+  &:hover {
+    border: 1px dotted white;
+    cursor: pointer;
+  }
+}
+.flecha {
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 7px solid $white;
+}
+
+.selector-tema:hover,
+.doble-btn:hover {
+  .borde-dotted-1,
+  .borde-dotted-2,
+  .borde-dotted-3 {
+    width: 99%;
+    height: 32px;
+    border: 1px dotted $dark-blue;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+  }
+
+  .dotted-pink {
+    background: $pink-dark;
+  }
+}
+
+.lista-temas {
+  background: $grey-lighter;
+  @include grey-boxes-shadow();
+}
+
+.theme-day {
+  background: #cccccc;
+  @include btn-border-shadow();
+}
+
+.theme-night {
+  background: $light-blue;
+  border: 1px solid rgba(51, 53, 143, 0.2);
+  box-shadow: inset -1px -1px 0 0 #e6dce4, inset 1px 1px 0 0;
+  color: $white;
+}
+
+.subtitulado {
+  border: 1px solid $light-blue;
+  box-shadow: inset -2px -2px 0 0 #e6dce4, inset 2px 2px 0 0 #110038;
+}
+
+.busqueda {
+  background: $grey-lighter;
+  @include grey-boxes-shadow();
+}
+
+.btn-dis {
+  background: $grey-lighter;
+  color: #8f8f8f;
+  @include btn-border-shadow();
+}
+
+.resultados-sugeridos {
+  background: $grey-lighter;
+  @include grey-boxes-shadow();
+  button {
+    background: #cccccc;
+    @include btn-border-shadow();
+  }
+}
+
+.contenedor-gif {
+  background: #b4b4b4;
+  box-shadow: inset -2px -2px 0 0 #5c5c5c, inset 2px 2px 0 0 #ffffff;
+  a {
+    background: #2e32fb;
+    border: 1px solid #4c2f99;
+    box-shadow: inset -2px -2px 0 0 #2124b3, inset 2px 2px 0 0 #ffffff;
+    :hover {
+      background: #2629cc;
+    }
+  }
+}
+
+.result-gif:hover {
+  @include dark-border-shadow();
+}
+
+.related-results {
+  button {
+    @include btn-blue();
+  }
+}
+
+.crear-gifos-inicia,
+.crear-guifos-grabar {
+  background: $grey-lighter;
+}
+
+.square-pink {
+  background: $pink-light;
+}
+
+.error-window {
+  background: $grey-lighter;
+}
+
+.copy-popup{ position: absolute;
+  margin-left: 488px;
+  z-index: 5;
+  margin-top: 121px;
+  h4 {
+  width: fit-content;
+  @include btn-blue();
+}}
+
+.selector-tema{
+  background-color: $pink-light;
+}

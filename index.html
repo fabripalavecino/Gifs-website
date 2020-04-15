@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./styles/theme1.css">
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/estilos.css">
+    <title>gifOS</title>
+</head>
+
+<body>
+    <header class="chakra gradient font-1">¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de
+        visitas: 12.765.803</header>
+    <div class="page">
+        <figure class="barra">
+            <a href="index.html">
+                <img src="./assets/gifOF_logo.png" alt="logo gifOs" id="logo-gifos">
+            </a>
+            <nav>
+                <a href="mis-guifos.html" class="crear-gifos pink-button button-1">
+                    <span class="borde-dotted-1 dotted-pink font-2" id="crear-gif">Crear Guifos</span>
+                </a>
+                <figure class="selector-tema">
+                    <button class=" pink-button button-2">
+                        <span class="borde-dotted-2 dotted-pink font-2">Elegir Tema</span>
+                    </button>
+                    <button class="pink-button button-3" id="drop-list">
+                        <span class="dotted-pink borde-dotted-3">
+                            <span class="flecha"></span>
+                        </span>
+                    </button>
+                    <ul class="lista-temas hide" id="lista-tema">
+                        <li class="button-4 theme-day">
+                            <span class="underline" id="theme-day">S</span>
+                            ailor Day
+                        </li>
+                        <li class="button-4 theme-night">
+                            <span id="theme-night">S</span>
+                            ailor Night
+                        </li>
+                    </ul>
+                </figure>
+                <a href="#" class="my-guifos font-2" id="mis-guifos">
+                    <span class="underline">M</span>
+                    is Guifos
+
+                </a>
+            </nav>
+
+        </figure>
+        <figure class="busca-gif" id="busqueda-seccion">
+            <form class="busqueda" id="form-busqueda" autocomplete="off">
+                <label for="barra-busqueda" class="gradient chakra font-3">Buscar</label>
+                <figure>
+                    <input type="text" id="barra-busqueda" placeholder="Busca gifs, temas, hashtags..."
+                        class="chakra font-2">
+                    <button id="busca" class="button-5 chakra font-2 btn-dis" type="button" disabled>
+                        <span id="busca-hover">
+                            <img src="./assets/lupa_inactive.svg" alt="lupa" id="l-inact">
+
+                            Buscar
+
+                        </span>
+                    </button>
+                </figure>
+            </form>
+            <figure class="hide" id="related-buttons"></figure>
+            <figure class="resultados-sugeridos hide" id="sugeridos">
+                <button class="chakra font-2">
+                    <span id="sugerido1">GIF of Animals</span>
+                </button>
+                <button class="chakra font-2">
+                    <span id="sugerido2"> GIF of DOGS</span>
+                </button>
+                <button class="chakra font-2">
+                    <span id="sugerido3">GIF futbol</span>
+                </button>
+            </figure>
+
+        </figure>
+        <section class="gifs-sugeridos" id="sugeridos-gifs">
+            <h2 class="chakra font-3 subtitulado">Hoy te sugerimos:</h2>
+            <div id="contenedor-sugeridos">
+
+            </div>
+
+        </section>
+        
+        <section class="resultado-gifs" id="gif-seccion-principal">
+            <h2 class="chakra font-3 subtitulado" id="contenedor-titulo-gif">
+                Tendencias
+            </h2>
+            <div id="resultado-gifs-box">
+                <figure class="result-gif"><img
+                        src="https://media.giphy.com/media/E7KpCs9NhJiRq/giphy.gif"
+                        class="img-gif" alt="axl rose">
+                    <figcaption class="gradient"></figcaption>
+                </figure>
+                <figure class="result-gif"><img
+                        src="https://media1.giphy.com/media/vBjLa5DQwwxbi/giphy.gif?cid=e68a229640f01ddef162fb8b4965629a28286c46319f57de&amp;rid=giphy.gif"
+                        class="img-gif" alt="doctor who marvel GIF">
+                    <figcaption class="gradient"></figcaption>
+                </figure>
+                <figure class="result-gif"><img
+                        src="https://media.giphy.com/media/hVy0mtr2EgwsGVeDCm/giphy.gif"
+                        class="img-gif" alt="River">
+                    <figcaption class="gradient"></figcaption>
+                </figure>
+                <figure class="result-gif"><img
+                        src="https://media2.giphy.com/media/eenzqB2MsGKbK/giphy.gif?cid=e68a229640f01ddef162fb8b4965629a28286c46319f57de&amp;rid=giphy.gif"
+                        class="img-gif" alt="avengers assemble hulk GIF">
+                    <figcaption class="gradient"></figcaption>
+                </figure>
+                <figure class="result-gif"><img
+                        src="https://media.giphy.com/media/fv8KclrYGp5dK/giphy.gif"
+                        class="img-gif" alt="Sherlock">
+                    <figcaption class="gradient"></figcaption>
+                </figure>
+                <figure class="result-gif"><img
+                        src="https://media.giphy.com/media/B29mTiqmDxDy0/giphy.gif"
+                        class="img-gif" alt="#AvatarState">
+                    <figcaption class="gradient"></figcaption>
+                </figure>
+                <figure class="result-gif"><img
+                        src="https://media2.giphy.com/media/rj12FejFUysTK/giphy.gif?cid=e68a229640f01ddef162fb8b4965629a28286c46319f57de&amp;rid=giphy.gif"
+                        class="img-gif" alt="the avengers GIF">
+                    <figcaption class="gradient"></figcaption>
+                </figure>
+                <figure class="result-gif"><img
+                        src="https://media2.giphy.com/media/8xomIW1DRelmo/giphy.gif?cid=e68a229640f01ddef162fb8b4965629a28286c46319f57de&amp;rid=giphy.gif"
+                        class="img-gif" alt="the avengers marvel GIF">
+                    <figcaption class="gradient"></figcaption>
+                </figure>
+                <figure class="result-gif"><img
+                        src="https://media.giphy.com/media/3oriNZGGY2eNlwj2sE/giphy.gif"
+                        class="img-gif" alt="">
+                    <figcaption class="gradient"></figcaption>
+                </figure>
+                <figure class="result-gif"><img
+                        src="https://media.giphy.com/media/3owvKhU1zh5VlZmb6w/giphy.gif"
+                        class="img-gif" alt="game of thrones">
+                    <figcaption class="gradient"></figcaption>
+                </figure>
+                <figure class="result-gif"><img
+                        src="https://media2.giphy.com/media/9tZc9Mzo9K0yOYx38U/giphy.gif?cid=e68a229640f01ddef162fb8b4965629a28286c46319f57de&amp;rid=giphy.gif"
+                        class="img-gif" alt="spider-man marvel GIF by Spider-Man: Into The Spider-Verse">
+                    <figcaption class="gradient"></figcaption>
+                </figure>
+                <figure class="result-gif"><img
+                        src="https://media3.giphy.com/media/ZvkFmclQO1ImmRNm0K/giphy.gif?cid=e68a229640f01ddef162fb8b4965629a28286c46319f57de&amp;rid=giphy.gif"
+                        class="img-gif" alt="captain marvel GIF">
+                    <figcaption class="gradient"></figcaption>
+                </figure>
+                <figure class="result-gif"><img
+                        src="https://media.giphy.com/media/3oEjHWpiVIOGXT5l9m/giphy.gif"
+                        class="img-gif" alt="Mr Robot">
+                    <figcaption class="gradient"></figcaption>
+                </figure>
+                <figure class="result-gif"><img
+                        src="https://media.giphy.com/media/j2pWZpr5RlpCodOB0d/giphy.gif"
+                        class="img-gif" alt="Avengers Endgame gif">
+                    <figcaption class="gradient"></figcaption>
+                </figure>
+                <figure class="result-gif"><img
+                        src="https://media.giphy.com/media/DpZleiMkn4zzG/giphy.gif"
+                        class="img-gif" alt="Joker">
+                    <figcaption class="gradient"></figcaption>
+                </figure>
+                <figure class="result-gif"><img
+                        src="https://media1.giphy.com/media/3ov9k4NsFvp6e7FCJq/giphy.gif?cid=e68a229640f01ddef162fb8b4965629a28286c46319f57de&amp;rid=giphy.gif"
+                        class="img-gif" alt="black panther marvel GIF">
+                    <figcaption class="gradient"></figcaption>
+                </figure>
+                <figure class="result-gif"><img
+                        src="https://media.giphy.com/media/3ohc11UljvpPKWeNva/giphy.gif"
+                        class="img-gif" alt="Walter White">
+                    <figcaption class="gradient"></figcaption>
+                </figure>
+                <figure class="result-gif"><img
+                        src="https://media3.giphy.com/media/3o7budMRwZvNGJ3pyE/giphy.gif?cid=e68a229640f01ddef162fb8b4965629a28286c46319f57de&amp;rid=giphy.gif"
+                        class="img-gif" alt="baby groot hello GIF">
+                    <figcaption class="gradient"></figcaption>
+                </figure>
+                <figure class="result-gif"><img
+                        src="https://media1.giphy.com/media/1AeOVi16aoeT9uQ5eZ/giphy.gif?cid=e68a229640f01ddef162fb8b4965629a28286c46319f57de&amp;rid=giphy.gif"
+                        class="img-gif" alt="marvel avengers endgame GIF">
+                    <figcaption class="gradient"></figcaption>
+                </figure>
+                <figure class="result-gif"><img
+                        src="https://media1.giphy.com/media/6eldw9RwTe3de/giphy.gif?cid=e68a229640f01ddef162fb8b4965629a28286c46319f57de&amp;rid=giphy.gif"
+                        class="img-gif" alt="aroused ryan reynolds GIF">
+                    <figcaption class="gradient"></figcaption>
+                </figure>
+
+
+            </div>
+        </section>
+    </div>
+    <script src="./script/app.js"></script>
+</body>
+
+
+</html>

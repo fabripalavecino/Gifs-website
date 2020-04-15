@@ -1,0 +1,177 @@
+$chakra: "Chakra Petch",
+sans-serif;
+$white: #ffffff;
+$dark-blue: #110038;
+$light-blue: #4180f6;
+$pink-light: #f7c9f3;
+$pink-dark: #e6bbe2;
+$grey-light: #e6e6e6;
+$violet: #997d97;
+
+@mixin btn-blue {
+    background: $light-blue;
+    border: 1px solid #4c2f99;
+    box-shadow: inset -2px -2px 0 0 #284f99, inset 2px 2px 0 0 $white;
+}
+
+@mixin grey-boxes-shadow {
+    box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 $white;
+}
+
+@mixin btn-border-shadow {
+    border: 1px solid #808080;
+    box-shadow: inset -1px -1px 0 0 #b4b4b4, inset 1px 1px 0 0 $white;
+}
+
+
+.gradient {
+    background-image: linear-gradient(270deg, $pink-light 0%, $light-blue 100%);
+}
+
+.pink-button {
+    background: $pink-light;
+    box-shadow: inset -1px -1px 0 0 $violet,
+        inset 1px 1px 0 0 $white;
+    border: 1px solid $dark-blue;
+    justify-content: center;
+
+     :hover {
+        background: $pink-dark;
+    }
+}
+
+.my-guifos:hover {
+    border: 1px dotted $dark-blue;
+    cursor: pointer;
+}
+
+.my-guifos:active {
+    border: $white;
+    color: grey;
+}
+
+.busqueda {
+    background: $grey-light;
+    @include grey-boxes-shadow();
+
+}
+
+.selector-tema :hover,
+.doble-btn:hover {
+
+    .borde-dotted-1,
+    .borde-dotted-2,
+    .borde-dotted-3 {
+        width: 99%;
+        height: 32px;
+        border: 1px dotted $dark-blue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .dotted-pink {
+        background: $pink-dark;
+    }
+
+}
+
+.lista-temas {
+    background: $grey-light;
+    @include grey-boxes-shadow();
+}
+
+.theme-day {
+    background: #fff4fd;
+    border: 1px solid #cca6c9;
+    box-shadow: inset -1px -1px 0 0 #e6dce4, inset 1px 1px 0 0 $white;
+}
+
+.theme-night {
+    background: #f0f0f0;
+    @include btn-border-shadow();
+}
+
+.fill{
+    background-color: $pink-light;
+}
+.subtitulado {
+    border: 1px solid $pink-dark;
+    box-shadow: inset -2px -2px 0 0 #e6dce4, inset 2px 2px 0 0 #80687d;
+}
+
+.btn-dis {
+    background: $grey-light;
+    color: #b4b4b4;
+    border: 1px solid #808080;
+    @include btn-border-shadow();
+}
+
+.resultados-sugeridos {
+
+    background: $grey-light;
+    @include grey-boxes-shadow();
+
+    button {
+        background: #f0f0f0;
+        @include btn-border-shadow();
+
+        span:hover {
+            background: #dbdbdb;
+        }
+    }
+}
+
+.contenedor-gif {
+    background: #e6e6e6;
+    box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 $white;
+
+    a {
+        background: #4180f6;
+        border: 1px solid #4c2f99;
+        box-shadow: inset -2px -2px 0 0 #284f99, inset 2px 2px 0 0 $white;
+
+        :hover {
+
+            background: #3a72db;
+        }
+    }
+}
+
+
+.resultado-gifs:hover {
+    background: $grey-light;
+    @include grey-boxes-shadow();
+}
+
+.related-results {
+    button {
+        @include btn-blue();
+    }
+}
+
+.crear-gifos-inicia,
+.crear-gifos-grabar {
+    background: $grey-light;
+}
+
+.square-pink {
+    background: $pink-light;
+}
+
+.error-window {
+    background: $grey-light;
+}
+
+.copy-popup{ position: absolute;
+    margin-left: 488px;
+    z-index: 5;
+    margin-top: 121px;
+    h4 {
+    width: fit-content;
+    @include btn-blue();
+  }}
+  
+.crear-guifos-grabar{
+    background: $grey-light;
+}
