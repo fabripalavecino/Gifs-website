@@ -22,10 +22,10 @@ const confirmWindow = document.getElementById('confirm-window');
 const repetirCaptura = document.getElementById('btn-recapture');
 const downloadBtn = document.getElementById('download-btn');
 const finBtn = document.getElementById('finish-btn');
-const urlUpload = 'http://upload.giphy.com/v1/gifs';
-const url = 'http://api.giphy.com/v1/gifs'
+const urlUpload = 'https://upload.giphy.com/v1/gifs';
+const url = 'https://api.giphy.com/v1/gifs'
 const apiKey = "92C28WlFwVY4NJGckPqa78E21ZlPafD2";
-const hrefThemeNight = "http://127.0.0.1:5500/styles/theme2.css";
+const hrefThemeNight = "https://127.0.0.1:5500/styles/theme2.css";
 const gifsCreados = document.getElementById('gifs-creados');
 const mjeCopiado = document.getElementById('copy-msg');
 

@@ -2,9 +2,9 @@ let busqueda = document.getElementById('barra-busqueda');
 let enviar = document.getElementById('busca');
 let resultadosSugeridos = document.getElementById('sugeridos');
 const apiKey = "92C28WlFwVY4NJGckPqa78E21ZlPafD2";
-const url = "http://api.giphy.com/v1/gifs/search?q="
+const url = "https://api.giphy.com/v1/gifs/search?q="
 let contenedor = document.getElementById('resultado-gifs-box');
-const urlTrend = "http://api.giphy.com/v1/gifs/trending";
+const urlTrend = "https://api.giphy.com/v1/gifs/trending";
 let contenedorSugeridos = document.getElementById('contenedor-sugeridos');
 
 document.addEventListener('DOMContentLoaded', theme);
@@ -27,8 +27,8 @@ document.getElementById('drop-list').onclick = function() {
     desaparece();
 }
 
-const hrefThemeNight = "http://127.0.0.1:5500/styles/theme2.css";
-const hrefThemeDay = "http://127.0.0.1:5500/styles/theme1.css";
+const hrefThemeNight = "https://127.0.0.1:5500/styles/theme2.css";
+const hrefThemeDay = "https://127.0.0.1:5500/styles/theme1.css";
 
 
 function localStorageTema(){
