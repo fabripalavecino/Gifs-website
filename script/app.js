@@ -95,54 +95,6 @@ busqueda.addEventListener('keydown', () => {
 
 });
 
-/*
-function getVerMas() {
-    const verMas = document.querySelectorAll('.link-sugerido');
-    const contenedorGifs = document.querySelectorAll('.contenedor-gif');
-    const tituloSugerido = document.querySelectorAll('.titulo-sugerido');
-    verMas.forEach(element => {
-        element.onclick = e => {
-            let gifTag = contenedorGifs.tituloSugerido[e.target];
-        fetch( url + gifTag.toString() + '&api_key=' + apiKey +'&limit=20')
-        .then(response => {
-            return response.json();
-        })
-        .then(data => {
-            let array = [];
-            data.data.forEach(e => {
-                array.push(new Gifs (
-                    e.images.downsized_large.url,
-                    e.title
-                ))   
-            });
-            console.log(data);
-            console.log(array);
-            array.forEach(e =>{
-                let busquedaResultado = document.createElement('figure');
-                busquedaResultado.classList.add('result-gif');
-                busquedaResultado.innerHTML = `<img src="${e.image}" class="img-gif" alt= "${e.title}">
-                <figcaption class="gradient"></figcaption>`;
-                contenedor.appendChild(busquedaResultado); 
-                } )
-
-        })
-        
-        .catch(error => {
-            return error;
-        });
-
-        }
-        
-    });
-
-}
-
-
-
-
-window.addEventListener('load', getVerMas);
-*/
-
 
 
 function verMasButton0(){
