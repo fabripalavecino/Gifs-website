@@ -13,7 +13,7 @@
 
 <body>
     <header class="chakra gradient font-1">¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de
-        visitas: 12.765.803</header>
+        visitas: 12</header>
     <div class="page">
         <figure class="barra">
             <a href="index.html">
@@ -43,7 +43,7 @@
                         </li>
                     </ul>
                 </figure>
-                <a href="#" class="my-guifos font-2" id="mis-guifos">
+                <a href="mis-guifos.html#gifs-creados" class="my-guifos font-2" id="mis-guifos">
                     <span class="underline">M</span>
                     is Guifos
 
@@ -52,12 +52,12 @@
 
         </figure>
         <figure class="busca-gif" id="busqueda-seccion">
-            <form class="busqueda" id="form-busqueda" autocomplete="off">
+            <div class="busqueda" id="form-busqueda" autocomplete="off">
                 <label for="barra-busqueda" class="gradient chakra font-3">Buscar</label>
                 <figure>
                     <input type="text" id="barra-busqueda" placeholder="Busca gifs, temas, hashtags..."
                         class="chakra font-2">
-                    <button id="busca" class="button-5 chakra font-2 btn-dis" type="button" disabled>
+                    <button id="busca" class="button-5 chakra font-2 btn-dis"  type="submit" onclick="getSearchResults();" disabled>
                         <span id="busca-hover">
                             <img src="./assets/lupa_inactive.svg" alt="lupa" id="l-inact">
 
@@ -66,7 +66,7 @@
                         </span>
                     </button>
                 </figure>
-            </form>
+            </div>
             <figure class="hide" id="related-buttons"></figure>
             <figure class="resultados-sugeridos hide" id="sugeridos">
                 <button class="chakra font-2">

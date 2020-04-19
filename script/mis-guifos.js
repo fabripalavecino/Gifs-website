@@ -28,6 +28,8 @@ const apiKey = "92C28WlFwVY4NJGckPqa78E21ZlPafD2";
 const hrefThemeNight = "https://fabripalavecino.github.io/Segundo-Proyecto/styles/theme2.css";
 const gifsCreados = document.getElementById('gifs-creados');
 const mjeCopiado = document.getElementById('copy-msg');
+const timeSquare = document.getElementsByClassName('time-square');
+const loadingSquare = document.getElementsByClassName('loading-square')
 
 
 theme();
@@ -76,6 +78,7 @@ btnCapturar.addEventListener('click', () =>{
     btnCapturar.classList.toggle('hide');
     control.classList.toggle('hide');
     btnListo.classList.toggle('hide');
+    tiempoVideo(); 
     let p = navigator.mediaDevices.getUserMedia({ audio: false, video: {height: {max: 480}}});
     p.then(mediaStream => {
     recorder = RecordRTC(mediaStream, {
@@ -90,7 +93,7 @@ btnCapturar.addEventListener('click', () =>{
          
        },
       }); 
-      recorder.startRecording(); 
+      recorder.startRecording();  
 });
     btnListo.addEventListener('click',() => {
         recorder.stopRecording( () => {
@@ -99,6 +102,8 @@ btnCapturar.addEventListener('click', () =>{
         btnListo.classList.toggle('hide');
         captureConfirm.classList.toggle('hide');
         btnUpload.classList.toggle('hide');
+        stopTimer();
+        barraProgreso(timeSquare);
         repetirCaptura.addEventListener('click', () => {
             goToMyGuifos()
         });
@@ -117,6 +122,7 @@ btnCapturar.addEventListener('click', () =>{
             cargaSeccion.classList.toggle('hide');
             imgPreview.classList.toggle('hide');
             tituloGrabado.innerText = 'Subiendo Guifo';
+            barraProgreso(loadingSquare);
             const initUpload = {method: 'POST', mode: 'cors', body: form}
             const ApiUpload = fetch(urlUpload + '?&api_key=' + apiKey , initUpload)
             .then(res => res.json())
@@ -214,8 +220,47 @@ copyBtn.addEventListener('click' , ()=>{
 finBtn.addEventListener('click', ()=>{goToMyGuifos();})
 validarGifsId()
 
+let timerGif = null;
+const tiempoVideo = () => {
+    const contador = document.querySelector('.contador');
+    let h = 0;
+    let m = 0;
+    let s = 0;
+    let ms = 0;
+    timerGif = setInterval( () => {
+        let hours = h < 10 ? '0' + h : h
+        let min = m < 10 ? '0' + m : m
+        let sec = s < 10 ? '0' + s : s
+        let miliSec = ms < 10 ? '0' + ms : ms
+
+        if(ms < 9) { ms += 1 }
+        else if(s < 59) { ms = 0; s += 1 } 
+        else if(m < 59) { ms = 0; s = 0; m += 1 }
+        else if(h < 23) { ms = 0; s = 0; m = 0; h +=1 }
+        
+        contador.innerHTML = hours + ':' + min + ':' + sec + ':' + miliSec
+    }, 100)
+}
+
+const stopTimer = () => clearInterval(timerGif)
 
 
 
+function barraProgreso(square){
+let animate =   setInterval(() => {
+        for(let i = 0; i < square.length; i++){
+            square[i].classList.toggle('square-pink');
+    }
+    }, 350);
+    setTimeout(() => {
+        clearInterval(animate);
+        for(let i = 0; i < square.length; i++){
+            square[i].classList.add('square-pink');
+    }}, 3500);
+    
+}
 
 })
+
+
+

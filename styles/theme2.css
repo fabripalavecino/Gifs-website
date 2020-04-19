@@ -130,14 +130,14 @@ body {
           box-shadow: inset -2px -2px 0 0 #5c5c5c, inset 2px 2px 0 0 #ffffff;
 }
 
-.contenedor-gif a {
+.contenedor-gif button {
   background: #2e32fb;
   border: 1px solid #4c2f99;
   -webkit-box-shadow: inset -2px -2px 0 0 #2124b3, inset 2px 2px 0 0 #ffffff;
           box-shadow: inset -2px -2px 0 0 #2124b3, inset 2px 2px 0 0 #ffffff;
 }
 
-.contenedor-gif a :hover {
+.contenedor-gif button :hover {
   background: #2629cc;
 }
 
