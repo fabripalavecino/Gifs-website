@@ -6,7 +6,7 @@ const url = "https://api.giphy.com/v1/gifs/search?q="
 let contenedor = document.getElementById('resultado-gifs-box');
 const urlTrend = "https://api.giphy.com/v1/gifs/trending";
 let contenedorSugeridos = document.getElementById('contenedor-sugeridos');
-const hrefThemeNight = "https://fabripalavecino.github.io/Gifs-website/styles/theme2.css";
+const hrefThemeNight = "https://github.com/fabripalavecino/Gifs-website/blob/master/styles/theme2.css";
 const misGuifos = document.getElementById('mis-guifos');
 const tituloTendencias = document.getElementById('contenedor-titulo-gif');
 const formBusqueda = document.getElementById('form-busqueda');
